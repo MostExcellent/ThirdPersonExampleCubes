@@ -50,9 +50,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spawn Config")
 	float JumpHeight = 100.0f;  // in Unreal units (centimeters)
 
-	// Now we have some overengineering for fun
-
-	// We will have this by default call the delegate on all spawned actors
+	// By default this makes all cubes jump
 	UFUNCTION(BlueprintNativeEvent, Category = "Spawn Events")
 	void ActorsSpawnedEvent();
 	virtual void ActorsSpawnedEvent_Implementation();
